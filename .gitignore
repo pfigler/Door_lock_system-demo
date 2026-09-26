@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Runtime data
+recordings/
+temp/
+
+# Personal / biometric data
+dataset/
+encodings.pickle
+
+# Local configuration / secrets
+config.py
+
+# Local / editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local files
+.lgd-nfy0
