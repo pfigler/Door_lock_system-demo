@@ -32,6 +32,34 @@ SMS modem ----------+                  +--> relay.py --> GPIO outputs / door loc
 
 `otp.py` handles TOTP checks and access requests. A valid SMS submitted code is checked and can open the door; an accepted keypad passcode, authorized RFID tag, or authorized face starts the TOTP prompt flow. `relay.py` listens for an `open` message and activates its configured output sequence for 15 seconds. The camera also provides its own HTTP stream and writes motion recordings to the `recordings` directories.
 
+## Documentation and demo media
+
+### System architecture
+
+![System block diagram](docs/images/01_system_block_diagram.png)
+
+### Hardware wiring
+
+![Hardware wiring diagram](docs/images/02_hardware_wiring_diagram.png)
+
+### Face dataset capture
+
+![Face dataset capture](docs/images/03_face_capture_process.png)
+
+### Hardware prototype
+
+![Hardware overview](docs/images/04_hardware_overview.jpg)
+
+![Hardware top view](docs/images/05_hardware_top_view.jpg)
+
+![Raspberry Pi close-up](docs/images/06_raspberry_pi_closeup.jpg)
+
+![Lock and keypad](docs/images/07_lock_and_keypad.jpg)
+
+### Running prototype
+
+![Running system](docs/images/08_running_system.jpg)
+
 ## Technologies
 
 - Python 3
